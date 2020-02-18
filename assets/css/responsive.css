@@ -2560,9 +2560,7 @@
         background-color: #222629
     }
 
-    .sticky .logo img {
-        max-width: 115px;
-    }
+
 
     .style-two .navbar-toggler,
     .style-two #navbarContent {
@@ -2629,9 +2627,6 @@
         line-height: 25px;
     }
 
-    .logo img {
-        max-width: 120px;
-    }
 
     .about-single {
         margin: 0 0 70px;
@@ -3342,7 +3337,7 @@
         padding-top: 5px;
     }
     .logo img{
-        max-width: 100px;
+        max-width: 145px;
     }
     #header.sticky .navbar {
         padding: 2px 0;

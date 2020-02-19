@@ -2782,8 +2782,8 @@ p {
     color: #fff;
 }
 
-.footer-widget-single ul li:hover a {
-    color: #131947
+.footer-widget-single ul li a:hover {
+    color: #393834
 }
 
 .footer-widget-single .footer-btns li {
@@ -2843,11 +2843,12 @@ p {
 
 .footer-bottom {
     padding: 25px 0 0;
-    overflow: hidden
+    overflow: hidden;
+    border-top: 1px solid white;
 }
 
 .footer-top {
-    padding: 0 0 110px
+    padding: 0 0 20px
 }
 
 .copyright-text p {
@@ -3388,4 +3389,10 @@ a:hover{
     display: block;
     background: url(../images/check.svg);
     background-size: contain;
+}
+#hero-area{
+    padding-bottom: 0 !important;
+}
+#about-area{
+    padding-top:0 !important;
 }

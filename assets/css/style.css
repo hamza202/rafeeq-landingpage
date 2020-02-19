@@ -804,7 +804,6 @@ p {
 
 .features-single {
     margin: 0 0 20px;
-    cursor: pointer;
     border-radius: 10px;
     -webkit-transition: 0.5s;
     transition: 0.5s
@@ -818,7 +817,7 @@ p {
     transition: 0.3s
 }
 
-.features-single:hover .icon i,
+
 .features-single .feature-link.active i,
 .features-single.v2 .icon i {
     color: #D7AA4A
@@ -841,7 +840,7 @@ p {
     background-repeat: no-repeat;
 }
 
-.features-single:hover i,
+
 .features-single .feature-link.active i {
     background-image: url(../images/icons/feat-icon-bg.png);
 }
@@ -863,8 +862,7 @@ p {
     overflow: hidden
 }
 
-.features-single .feature-link.active,
-.features-single:hover .feature-link {
+.features-single .feature-link.active{
     background-color: #D7AA4A
 }
 
@@ -881,8 +879,6 @@ p {
 
 .features-single .feature-link.active h4,
 .features-single .feature-link.active p,
-.features-single:hover h4,
-.features-single:hover p,
 .features-single.v2 h4,
 .features-single.v2 p {
     color: #fff !important
@@ -897,16 +893,18 @@ p {
     box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.35) !important;
 }
 
-.features-carousel .owl-nav {
+.features-carousel .owl-nav,
+.screen-carousel-default .owl-nav{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -175px;
+    bottom: -145px;
     width: 100%;
     text-align: center
 }
 
-.features-carousel .owl-nav div {
+.features-carousel .owl-nav div,
+.screen-carousel-default .owl-nav div{
     background-color: #fff1d4;
     width: 65px;
     height: 65px;
@@ -937,7 +935,8 @@ p {
     left: auto;
 }
 
-.features-carousel .owl-nav div:hover {
+.features-carousel .owl-nav div:hover,
+.screen-carousel-default .owl-nav div:hover {
     background-color: #D7AA4A;
     color: #fff;
 }
@@ -2171,7 +2170,6 @@ p {
 }
 
 .screen-carousel-wrap-default {
-    margin-right: -25%;
     margin-top: 45px
 }
 
@@ -2202,10 +2200,11 @@ p {
     margin-top: 35px
 }
 
-.screen-carousel-default.owl-carousel .owl-dots {
+.screen-carousel-default.owl-carousel .owl-nav {
     position: absolute;
-    left: -36%;
-    bottom: 28%;
+    bottom: 22%;
+    left: -38%;
+    width: 200px;
 }
 
 .screen-carousel-default.owl-carousel .owl-dot {

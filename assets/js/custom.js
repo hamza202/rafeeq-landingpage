@@ -26,13 +26,9 @@
             $owlFeatures.on("changed.owl.carousel", function (e) {
                 var o = e.item.index + 1 - e.relatedTarget._clones.length / 2,
                     n = e.item.count;
-                (o > n || 0 == o) && (o = n - o % n), o--;
+                (o > n || 0 === o) && (o = n - o % n), o--;
                 var t = $(".feature-link:nth(" + o + ")");
                 a(t)
-            }),
-            $featureLinks.on("click", function () {
-                var e = $(this).data("owl-item");
-                $owlFeatures.trigger("to.owl.carousel", e), a($(this))
             });
 
 
@@ -41,9 +37,11 @@
         ----------------------------------------------------*/
         $('.screen-carousel-default').owlCarousel({
             loop: true,
-            navText: ['<i class="icofont-simple-left"></i>', '<i class="icofont-simple-right"></i>'],
-            nav: false,
+            navText: ['<i class="icofont-long-arrow-left"></i>', '<i class="icofont-long-arrow-right"></i>'],
+            nav: true,
             autoplay: false,
+            dots:false,
+            touchDrag: true,
             autoplayTimeout: 5000,
             animateOut: 'fadeOut',
             animateIn: 'fadeIn',
@@ -60,10 +58,10 @@
                     items: 2
                 },
                 1200: {
-                    items: 4
+                    items: 3
                 },
                 1920: {
-                    items: 4
+                    items: 3
                 }
             }
         });

@@ -2680,7 +2680,7 @@ p {
 ---------------------------------------------------------------------------------------*/
 
 #footer {
-    padding: 75px 0 0;
+    padding: 90px 0 0;
 }
 
 #footer.bg {
@@ -3395,4 +3395,7 @@ a:hover{
 }
 #about-area{
     padding-top:0 !important;
+}
+.color1{
+    color: #d7aa4a;
 }

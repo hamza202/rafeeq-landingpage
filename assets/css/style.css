@@ -3449,8 +3449,10 @@ a:hover {
     }
 
     .search-container-input {
-        border: 1px solid #bfbfbf;
+        border: 1px solid #d7d7d7;
         border-radius: 5px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, .12);
+
     }
 
     .search-container .row .col-lg:not(:last-child) .search-container-input {
